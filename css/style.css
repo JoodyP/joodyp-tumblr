@@ -122,6 +122,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   text-align: justify;
 }
 
+.link-icon:hover {
+  text-decoration: none;
+}
+
 .about .profile-picture {
   margin-right: 15px;
   margin-bottom: 15px;
@@ -138,10 +142,6 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   margin-right: 5px;
 }
 
-.about .connect-icons a:hover {
-  text-decoration: none;
-}
-
 .about .connect-icons i {
   vertical-align: -15%;
 }
@@ -151,6 +151,26 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   padding-right: 20px;
   padding-bottom: 10px;
   border-right: 1px solid #dddddd;
+}
+
+.content a {
+  color: #000000;
+}
+
+.content .post-title {
+  margin-bottom: 0;
+}
+
+.content .post-date {
+  margin-bottom: 5px;
+}
+
+.content .post-info {
+  margin-top: 15px;
+}
+
+.content .post-info i {
+  margin-left: 5px;
 }
 
 hr {
@@ -233,6 +253,10 @@ hr {
     border-right: 0;
     padding-left: 5px;
     border-left: 1px solid #dddddd;
+  }
+  
+  .content .post-info {
+    margin-top: 5px;
   }
 }
 
