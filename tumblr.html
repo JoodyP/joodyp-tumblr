@@ -70,21 +70,76 @@
           {block:Posts}
               <div class="row-fluid">
                 <div class="span12">
-                    <div class="post-type pull-right"><a href="{Permalink}" class="link-icon">
+                    <div class="post-type pull-left"><a href="{Permalink}" class="link-icon">
                       {block:Text}<i class="icon-pencil icon-2x"></i>{/block:Text}
-                      {block:Photo}<i class="icon-camera icon-2x"></i>{/block:Photo}</a></div>
+                      {block:Photo}<i class="icon-camera icon-2x"></i>{/block:Photo}
+                      {block:Photoset}<i class="icon-camera icon-2x"></i>{/block:Photoset}
+                      {block:Quote}<i class="icon-quote-left icon-2x"></i>{/block:Quote}
+                      {block:Link}<i class="icon-link icon-2x"></i>{/block:Link}
+                      {block:Chat}<i class="icon-comment icon-2x"></i>{/block:Chat}
+                      {block:Video}<i class="icon-film icon-2x"></i>{/block:Video}
+                      {block:Audio}<i class="icon-microphone icon-2x"></i>{/block:Audio}</a></div>                      
+                    <div class="post-info pull-right"><small>{block:Tags}<a href="{tagURL}" class="link-icon"><i class="icon-tag"></i>{Tag}</a>{/block:Tags}<a href="{Permalink}#notes" class="link-icon">{NoteCount} <i class="icon-heart"></i></a></small></div>
                     <div class="post-headline">{block:Title}<h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}</div>
-                    <p class="post-date"><small>{block:Date}Posted {Month} {DayOfMonth}th {Year} {12Hour}:{Minutes}{CapitalAmPm}{/block:date}<span class="post-info pull-right">{block:Tags}<a href="{tagURL}" class="link-icon"><i class="icon-tag"></i>{Tag}</a>{/block:Tags}<a href="{Permalink}#notes" class="link-icon">{NoteCount} <i class="icon-heart"></i></a></span></small></p>
-                  {block:Text}
-                    {Body}
-                  {/block:Text}
-                  
-                  {block:Photo}
-                    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
-                    {block:Caption}
-                      {Caption}
-                    {/block:Caption}
-                  {/block:Photo}
+                    <p class="post-date"><small>{block:Date}Posted {Month} {DayOfMonth}th {Year} {12Hour}:{Minutes}{CapitalAmPm}{/block:date}</small></p>
+                  <div class="post-body">
+                    {block:Text}
+                      {Body}
+                    {/block:Text}
+                    
+                    {block:Photo}
+                      <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+                      {block:Caption}
+                        {Caption}
+                      {/block:Caption}
+                    {/block:Photo}
+                    
+                    {block:Photoset}
+                      {Photoset-500}
+                      {block:Caption}
+                        {Caption}
+                      {/block:Caption}
+                    {/block:Photoset}
+                    
+                    {block:Quote}
+                      <blockquote>{Quote}</blockquote>
+                      {block:Source}
+                        <p>&mdash; {Source}</p>
+                      {/block:Source}
+                    {/block:Quote}
+                    
+                    {block:Link}
+                      <a href="{URL}" class="link" {Target}>{Name}</a>                   
+                      {block:Description}
+                        {Description}
+                      {/block:Description}
+                    {/block:Link}
+                    
+                    {block:Chat}
+                      {block:Lines}
+                        <p>
+                          {block:Label}
+                            {Label}
+                          {/block:Label}
+                          {Line}
+                        </p>
+                      {/block:Lines}
+                    {/block:Chat}
+                    
+                    {block:Video}
+                      {Video-500}
+                      {block:Caption}
+                        {Caption}
+                      {/block:Caption}
+                    {/block:Video}
+                    
+                    {block:Audio}
+                      {AudioPlayerBlack}
+                      {block:Caption}
+                        {Caption}
+                      {/block:Caption}
+                    {/block:Audio}
+                  </div>
                 </div>
               </div>            
           {/block:Posts}
@@ -92,7 +147,7 @@
       </div>
       <hr>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="http://joodyp.github.io/joodyp-tumblr/js/jquery.min.js"></script>
+    <script src="http://joodyp.github.io/joodyp-tumblr/js/bootstrap.min.js"></script>
   </body>
 </html>

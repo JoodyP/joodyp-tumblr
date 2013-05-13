@@ -176,15 +176,23 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 .content .post-type i {
-  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.content .post-info {
+  margin-top: 10px;
+}
+
+.content .post-info a {
+  margin-left: 10px;
 }
 
 .content .post-date {
   margin-bottom: 5px;
 }
 
-.content .post-info a {
-  margin-left: 10px;
+.content .post-body a {
+  color: #0088cc;
 }
 
 hr {
