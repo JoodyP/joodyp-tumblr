@@ -164,7 +164,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 .content .post-headline {
-  min-height: 40px;
+  min-height: 50px;
 }
 
 .content .post-title {
