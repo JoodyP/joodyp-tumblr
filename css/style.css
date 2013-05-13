@@ -202,7 +202,7 @@ hr {
 @media (min-width: 980px) and (max-width: 1199px) {
   .about .connect-icons {
     display: block;
-    margin-left: 35px;
+    margin-left: 50px;
   }
 }
 
@@ -217,7 +217,7 @@ hr {
   
   .about .connect-icons {
     display: block;
-    margin-left: 25px;
+    margin-left: 20px;
   }
 }
 /* Landscape phones and down */
@@ -281,6 +281,6 @@ hr {
   
   .about .connect-icons {
     display: block;
-    margin-left: 25px;
+    margin-left: 20px;
   }
 }
