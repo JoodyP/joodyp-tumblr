@@ -145,8 +145,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 
 .about .connect-icons a {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
 }
 
 .about .connect-icons i {
@@ -203,7 +202,7 @@ hr {
 @media (min-width: 980px) and (max-width: 1199px) {
   .about .connect-icons {
     display: block;
-    margin-left: 55px;
+    margin-left: 35px;
   }
 }
 
