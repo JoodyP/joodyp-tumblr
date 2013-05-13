@@ -232,6 +232,7 @@ hr {
     margin-left: 20px;
   }
 }
+
 /* Landscape phones and down */
 @media (max-width: 767px) {
   /* Remove padding above jumbotron */
@@ -279,6 +280,10 @@ hr {
   
   .content .post-type {
     margin-top: 5px;
+  }
+  
+  .content .post-info {
+    margin-top: 0;
   }
 }
 
