@@ -163,6 +163,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   color: #000000;
 }
 
+.content .post-headline {
+  min-height: 40px;
+}
+
 .content .post-title {
   margin-bottom: 0;
 }

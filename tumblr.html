@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{Title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{Description}">
+    <meta name="author" content="Jonathan Lacasse">
+
+    <link href="http://joodyp.github.io/joodyp-tumblr/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://joodyp.github.io/joodyp-tumblr/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="http://joodyp.github.io/joodyp-tumblr/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link href="http://joodyp.github.io/joodyp-tumblr/css/style.css" rel="stylesheet">
+    <link href="http://joodyp.github.io/joodyp-tumblr/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="http://joodyp.github.io/joodyp-tumblr/img/favicon.png">
+  </head>
+
+  <body>
+    <header class="jumbotron" >
+      <div class="container jumbotron-container">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="active nav-first"><a href="#">Home</a></li>
+                  <li><a href="/ask">Ask Me Something</a></li>
+                  <li><a href="/archive">Archive</a></li>
+                </ul>
+                <form class="navbar-search span3 pull-right">
+                  <div class="input-prepend">
+                    <span class="add-on"><i class="icon-search"></i></span>
+                    <input type="text" placeholder="Search">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron-text-container">
+          <h1>JoodyP</h1>
+          <p class="lead">It's time to ramble on.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">   
+      <div class="row-fluid">
+        <div class="span3 pull-right about">
+          <h2>About</h2>
+          <p>Hi, I'm Jonathan Lacasse.</p>
+          <div class="pull-left profile-picture"><img src="http://joodyp.github.io/joodyp-tumblr/img/joodyp.jpg" alt="JoodyP" class="img-polaroid"/></div>
+          <p>{description}</p>
+          <p class="connect">Connect with me :<span class="connect-icons">
+              <a href="http://twitter.com/JoodyP" class="link-icon"><i class="icon-twitter icon-2x"></i></a>
+              <a href="http://linkedin.com/in/jonathanlacasse" class="link-icon"><i class="icon-linkedin icon-2x"></i></a>
+              <a href="mailto:mail@jonathanlacasse.com" class="link-icon"><i class="icon-envelope icon-2x"></i></a>
+            </span>
+          </p>
+        </div>
+        <div class="span9 content">
+          {block:Posts}
+              <div class="row-fluid">
+                <div class="span12">
+                    <div class="post-type pull-right"><a href="{Permalink}" class="link-icon">
+                      {block:Text}<i class="icon-pencil icon-2x"></i>{/block:Text}
+                      {block:Photo}<i class="icon-camera icon-2x"></i>{/block:Photo}</a></div>
+                    <div class="post-headline">{block:Title}<h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}</div>
+                    <p class="post-date"><small>{block:Date}Posted {Month} {DayOfMonth}th {Year} {12Hour}:{Minutes}{CapitalAmPm}{/block:date}<span class="post-info pull-right">{block:Tags}<a href="{tagURL}" class="link-icon"><i class="icon-tag"></i>{Tag}</a>{/block:Tags}<a href="{Permalink}#notes" class="link-icon">{NoteCount} <i class="icon-heart"></i></a></span></small></p>
+                  {block:Text}
+                    {Body}
+                  {/block:Text}
+                  
+                  {block:Photo}
+                    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+                    {block:Caption}
+                      {Caption}
+                    {/block:Caption}
+                  {/block:Photo}
+                </div>
+              </div>            
+          {/block:Posts}
+        </div>
+      </div>
+      <hr>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
