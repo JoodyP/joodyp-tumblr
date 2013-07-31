@@ -1,4 +1,4 @@
-joodyp-tumblr
+personal-website
 =============
 
-JoodyP's Tumblr
+JoodyP's Website
