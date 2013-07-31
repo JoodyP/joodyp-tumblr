@@ -1,4 +1,4 @@
 personal-website
 =============
 
-JoodyP's Website
+Personal website
