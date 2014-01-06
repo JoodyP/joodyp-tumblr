@@ -133,11 +133,17 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   text-decoration: none;
 }
 
+.about h2 {
+    margin-bottom: 5px;
+}
+
 .about .profile-picture {
-  margin-right: 15px;
-  margin-bottom: 15px;
-  width: 100px;
-  height: 100px;
+    float: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 .about .connect {
@@ -204,35 +210,6 @@ hr {
 /* Responsive */
 /*****************************************************************************/
 
-/* Desktop */
-@media (min-width: 1200px) {
-  .content {
-    width: 75.25% !important;
-  }
-}
-
-@media (min-width: 980px) and (max-width: 1199px) {
-  .about .connect-icons {
-    display: block;
-    margin-left: 50px;
-  }
-}
-
-/* Desktop to tablet */
-@media (min-width: 768px) and (max-width: 979px) {
-  .about .profile-picture {
-    float: none;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  
-  .about .connect-icons {
-    display: block;
-    margin-left: 20px;
-  }
-}
-
 /* Landscape phones and down */
 @media (max-width: 767px) {
   /* Remove padding above jumbotron */
@@ -268,7 +245,6 @@ hr {
   .about {
     padding-left: 5px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #dddddd;
   }
   
   .content {
@@ -289,13 +265,6 @@ hr {
 
 /* Really small phones and down */
 @media (max-width: 279px) {
-  .about .profile-picture {
-    float: none;
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  
   .about .connect-icons {
     display: block;
     margin-left: 20px;
