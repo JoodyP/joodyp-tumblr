@@ -1,0 +1,49 @@
+@import '~react-md/src/scss/react-md';
+
+$md-font-icon-size: 24px;
+$md-primary-color: $md-blue-grey-500;
+$md-secondary-color: $md-red-a-700;
+
+@include react-md-everything;
+
+.md-icon.fa  {
+    font-size: $md-font-icon-size;
+    height: $md-font-icon-size;
+    width: $md-font-icon-size;
+  
+    @media #{$md-desktop-media} {
+      font-size: $md-font-icon-dense-size;
+      height: $md-font-icon-dense-size;
+      width: $md-font-icon-dense-size;
+    }
+}
+
+html {
+    background: rgb(238, 238, 238);
+}
+
+body {
+    margin: 0;
+}
+
+.md-title--toolbar  {
+    line-height: 64px;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.app-card {
+    max-width: 400px;
+}
+
+.app-card-actions {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.app-card-button {
+    margin-left: 5px;
+}
