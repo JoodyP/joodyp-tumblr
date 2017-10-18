@@ -15,6 +15,7 @@ class App extends Component {
 
   render() {
     const urlTwitter = "https://twitter.com/itsminijo";
+    const urlInstagram = "https://www.instagram.com/itsminijo/";
     const urlLinkedIn = "https://www.linkedin.com/in/jonathanlacasse";
     const urlMail = "mailto:mail@jonathanlacasse.com";
     const imgGravatar = "https://s.gravatar.com/avatar/7e471557114b9ee19c80e224baae96a7?s=1000";
@@ -42,8 +43,16 @@ class App extends Component {
           </Media>
             <CardActions>
               <div 
-                className="app-card-actions"
+                className="app-card-actions md-cell--right"
               >
+                <Button 
+                  floating 
+                  secondary 
+                  className="app-card-button"
+                  iconClassName="fa fa-instagram" 
+                  onClick={function() {Btn_OnClicked('Instagram')}}
+                  href={urlInstagram} 
+                />
                 <Button 
                   floating 
                   secondary 
